@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа № 3. Асинхронный JavaScript и REST API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Доска публикаций</h1>
+
+  <!-- Область сообщений -->
+  <p id="message" class="message"></p>
+
+  <!-- Кнопка «Загрузить публикации» -->
+  <button id="load-btn">Загрузить публикации</button>
+
+  <!-- Область для списка публикаций -->
+  <div id="posts-list"></div>
+
+  <!-- Форма создания новой публикации (с подписанными полями «Заголовок» и «Текст» и кнопкой «Создать публикацию») -->
+  <form id="post-form">
+    <label for="title">Заголовок:</label>
+    <input type="text" id="title" placeholder="Введите заголовок" required>
+    
+    <label for="body">Текст:</label>
+    <textarea id="body" placeholder="Введите текст" required></textarea>
+    
+    <button type="submit" id="submit-btn">Создать публикацию</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
